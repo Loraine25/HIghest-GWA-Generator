@@ -26,6 +26,12 @@ with open("Students.txt") as main_file:
         student, gwa = line.strip().split(",")
         gwa = float(gwa)   
 
+# If highest
+        if gwa < highest_gwa:
+            highest_gwa = gwa
+            student_highest = student
 
+# Print the output
+print("The student with the highest grade or GWA is " + (str(student_highest)), "with a GWA of " + (str(highest_gwa)),". Congratulations!")
 
 
