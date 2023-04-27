@@ -19,3 +19,13 @@ with open("Students.txt") as main_file:
     highest_gwa = 5.00
     student_highest = ""
 
+#Loop through each line in the file
+    for line in main_file:
+
+        #Split the line into student name and GWA, then convert the GWA to float
+        student, gwa = line.strip().split(",")
+        gwa = float(gwa)   
+
+
+
+
