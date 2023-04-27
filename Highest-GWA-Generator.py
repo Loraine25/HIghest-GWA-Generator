@@ -12,3 +12,10 @@ print("")
 print("\033[1;3mMy name is \033[;45;1;3mLoraine\033[0m")
 your_name = input("\033[1;3mWhat is your name?\033[0m")
 print("\033[;1;3mI'm glad that you're here!\033[;34;1;3m" + your_name + "\033[0m \033[;1;3m, and i'll share to you the student who got the highest GWA!\033[0m")
+
+# Open the txt file for reading
+with open("Students.txt") as main_file:
+    # Create a variable to keep track of the name of the student who received the highest GWA and his/her GWA.
+    highest_gwa = 5.00
+    student_highest = ""
+
